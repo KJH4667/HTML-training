@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제목지정</title>
+   <style>
+    h1 {
+      text-align: center;
+    }
+
+    h1 span:nth-child(1) {
+      color: #0000FF;
+    }
+
+    h1 span:nth-child(2) {
+      color: red;
+    }
+
+    h1 span:nth-child(3) {
+      color: green;
+    }
+
+    input {
+      font-size: 20px;
+    }
+/* 
+    .button-container {
+      space-around: 10px; display: flex 안쓰고 바로 쓰면 오류뜸  
+      display: flex;
+      justify-content: space-around;
+      margin: 0 430px;
+    } */
+
+    .button-container {
+  display: flex;
+  flex-direction: row; /* ← 이게 핵심 */
+  /* flex-direction: column; 세로 정렬. */
+  align-items: center;    /* 가운데 정렬 */
+  gap: 10px;     /* 각 요소 간 간격 */ 
+  justify-content: center;
+}
+
+
+
+    
+   </style>
+</head>
+<body>
+  <!-- <h1>KJH4667. 블록요소 제목</h1> -->
+   <h1>
+    <span>K</span>
+    <span>J</span>
+    <span>H</span>
+    <span>4</span>
+    <span>6</span>
+    <span>6</span>
+    <span>7</span>
+
+   </h1>
+   <div class="button-container"> <!---button 태그는 div 태그 안에서 작성해야 css 적용가능-->
+    <input type="text">
+  <button> 1번째 검색</button>
+  <button> 2번째 검색</button>
+  </div>
+  
+</body>
+</html>
