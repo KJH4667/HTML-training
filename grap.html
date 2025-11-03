@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표 구현</title>
+  
+  <style>
+    table {
+      caption-side: top;
+      border: 3px solid; 
+      /* border: dotted; */
+       border-collapse: collapse; /* 이걸 table 안에 적었다. */
+       /* padding: 20px; table 안에 적어도 소용없음. 아무런 변화도 없다 */
+    }
+
+    tr, td {
+      border: 2px solid red; 
+      padding: 20px; /* tr, td 안에 적어야 효과있음 */
+    }
+
+    th {
+      border: 1px solid;
+      font-size: 30px;
+      
+    }
+
+    /* #C {
+      border-bottom: 1px detted;
+    }  Tq 이게 안되네  */
+    caption {
+      caption-side: bottom; /* 이건 right랑 left가 없는듯 하다. */
+      color: chocolate;
+      /* display: table-caption; 그냥 써봤는데 이게 뭐지;  */
+    }
+
+  </style>
+</head>
+<body>
+  <a href="http://www.naver.com" target="_self">네이버</a> <!-- a href 로 미리보기 후 클릭하니깐 미리보기는 사라지고 사이트에서 열린다. body 태그 안에서 적어야 한다. -->
+  <table>
+    <caption> 표 제목 지정 공간 </caption> <!-- id="C" 라고 지정해줘도 변함이없다. -->>
+    <thead>
+      <tr>
+        <th> 1번제목 </th>
+        <th> 2번제목 </th>
+        <th> 3번제목 </th>
+      </tr>
+      <tr>
+        <td> 1번내용 </td>
+        <td> 2번내용 </td>
+        <td> 3번내용 </td>
+      </tr>
+      <tr>
+        <td> 1-1번내용 </td>
+        <td> 1-2번내용 </td>
+        <td> 1-3번내용 </td>
+      </tr>
+    </thead>
+  </table>
+</body>
+</html>

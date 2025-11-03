@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      /* padding: 20px; */
+      margin: 10px; /*아니 갑자기 세로 간격이 넓어지네? 4군데 전체 10px 만큼이라서 그런듯. */
+      padding: 10px; /* 이걸 순서바꿔도 마찬가지. */ 
+      /* 자세히는 모르겠지만, div 태그 안이라서 이렇게 조정이 되는게 아닌가 싶기도 하다. */
+    }
+    #A1 {
+      background-color: aqua;
+      float: left;
+      /* clear: both; 마지막으로 여길 적었더니 아무런 반응이 없다.  A2의 clear를 주석처리하고 다시 해봐도 마찬가지다.*/
+    }
+
+    #A2 {
+      background-color: blueviolet;
+      float: right;
+      /* clear: both; */
+    }
+
+    /* A1, A2 의 float를 지정했는데 가관으로 배치된다. */
+
+    #A3 {
+      background-color: aquamarine;
+      /* clear: both; */
+    }
+
+    #A4 {
+      background-color: cadetblue;
+      /* clear: both; */
+    }
+
+    .B1 {
+      background-color: beige;
+    }
+
+    .B2 {
+      background-color: blueviolet;
+    }
+
+    .B3 {
+      background-color: aquamarine;
+    }
+
+    .B4 {
+      background-color: chocolate;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="A1">박스A</div>
+  <div id="A2">박스B</div>
+  <div id="A3">박스C</div>
+  <div id="A4">박스D</div>
+
+  <!-- 인라인 요소 실험-->>
+  <span class="B1">1박스</span>
+  <span class="B2">2박스</span>
+  <span class="B3">3박스</span>
+  <span class="B4">4박스</span>
+</body>
+</html>
