@@ -10,3 +10,9 @@ body {
   text-align: center;
   border-radius: 20px;
 }
+
+.nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
