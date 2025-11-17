@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스 메인 페이지</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f3ea;
+            margin: 0;
+        }
+
+        /* 상단 헤더 */
+        header.top-header {
+            width: 100%;
+            background-color: #fbf1e6;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        /* 왼쪽 로고 + uzip + 검색창 */
+        .logo-search {
+            display: flex;
+            align-items: center;
+            gap: 15px; /* 로고, 텍스트, 검색창 사이 간격 */
+        }
+
+        .logo-search img {
+            height: 26px;
+        }
+
+        .logo-search strong {
+            font-size: 18px;
+            color: #3a2a22;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid #e5d5c6;
+            width: 260px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: none;
+            flex: 1;
+            font-size: 13px;
+        }
+
+        /* 오른쪽 로그인/회원가입 */
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #6a4e3c;
+            font-weight: bold;
+            padding: 6px 12px;
+            border-radius: 6px;
+            background-color: #ffffffaa;
+        }
+
+        nav.menu-bar {
+            width: 100%;
+            background-color: #cda88c;
+            padding: 10px 30px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 25px;
+        }
+
+        nav.menu-bar a {
+            color: #3a2a22;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /* 뉴스 그리드 */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .category {
+            background: #ffffffaa;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .news-item {
+            padding: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 상단 헤더 -->
+    <header class="top-header">
+        <!-- 왼쪽: 로고 + uzip + 검색창 -->
+        <div class="logo-search">
+            <img src="./스크린샷 2025-11-17 092143.png" >
+            <strong>uzip</strong>
+            <div class="search-box">
+                <input type="text" placeholder="Highlight">
+                <img src="search-icon.png" height="16" alt="search">
+            </div>
+        </div>
+
+        <!-- 오른쪽: 로그인/회원가입 -->
+        <div class="auth-buttons">
+            <a href="login.html">로그인</a>
+            <a href="signup.html">회원가입</a>
+        </div>
+    </header>
+
+    <nav class="menu-bar">
+        <a href="#">경제</a>
+        <a href="#">사회</a>
+        <a href="#">세계</a>
+        <a href="#">생활/문화</a>
+        <a href="#">엔터</a>
+        <a href="#">정치</a>
+    </nav>
+
+    <main class="news-grid">
+        <div class="category">
+            <h2>사회</h2>
+            <div class="news-item">뉴스1</div>
+            <div class="news-item">뉴스2</div>
+            <div class="news-item">뉴스3</div>
+            <div class="news-item">뉴스4</div>
+            <div class="news-item">뉴스5</div>
+            <div class="news-item">뉴스6</div>
+        </div>
+
+        <div class="category">
+            <h2>스포츠</h2>
+            <div class="news-item">뉴스7</div>
+            <div class="news-item">뉴스8</div>
+            <div class="news-item">뉴스9</div>
+            <div class="news-item">뉴스10</div>
+            <div class="news-item">뉴스11</div>
+            <div class="news-item">뉴스12</div>
+        </div>
+
+        <div class="category">
+            <h2>IT/과학</h2>
+            <div class="news-item">뉴스13</div>
+            <div class="news-item">뉴스14</div>
+            <div class="news-item">뉴스15</div>
+            <div class="news-item">뉴스16</div>
+            <div class="news-item">뉴스17</div>
+            <div class="news-item">뉴스18</div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,38 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f3ea;
+            margin: 0;
+        }
+
+        
+        header.top-header {
+            width: 100%;
+            background-color: #fbf1e6;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+
+        .logo-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-left img {
+            height: 28px;
+        }
+        .search-box {
+    display: flex;
+    align-items: center;
+    background: white;        
+    padding: 6px 14px;        
+    border-radius: 20px;      
+    border: 1px solid #ddd;   
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1); 
+}
+
+        
+        nav.menu-bar {
+            width: 100%;
+            background-color: #d0a98f;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 14px;
+        }
+
+        
+
+        nav.menu-bar {
+    width: 100%;
+    background-color: #d0a98f;
+    padding: 10px 20px;   
+    display: flex;
+    justify-content: flex-start;   
+    gap: 20px;
+    font-size: 14px;
+}
+
+
+        
+        main {
+            margin: 40px auto;
+            width: 450px;
+            background-color: #fff;
+            padding: 40px 50px;
+            border-radius: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .top-logo {
+            width: 140px;
+            margin-bottom: 40px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            margin-bottom: 6px;
+            display: block;
+            color: #444;
+            font-size: 14px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .divider span {
+            margin: 0 10px;
+            color: #777;
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 14px;
+            border-radius: 30px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-  <input type="button" id="target" value="button" />
-  <script>
 
-
-//     const h1 = document.createElement('h1');
-// h1.textContent = "안녕하세요!";
-// console.log(h1); // <div>안녕하세요!</div>
-
-
-const h1 = document.createElement('h1');
-h1.textContent = "안녕하세요!";
-document.body.appendChild(h1); // body 끝에 h1 추가
-
-
-
-  </script>
- <main>
-  <header>
-    <h1> 로그인 화면 테스트</h1>
-  </header>
-  <section>
-    <label for="username">username</label>
-    <input type="text">
-    <label for="username">password</label>
-    <input type="text">
     
-  </section>
- </main>
+    <header class="top-header">
+        <div class="logo-left">
+            <img src="./스크린샷 2025-11-17 092143.png">
+            <strong>uzip</strong>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="검색어 입력">
+            <img src="./search-icon.png" height="40">
+        </div>
+    </header>
+
+   
+    <nav class="menu-bar">
+        <a href="#">경제</a>
+        <a href="#">사회</a>
+        <a href="#">세계</a>
+        <a href="#">생활/문화</a>
+        <a href="#">스포츠</a>
+        <a href="#">엔터</a>
+        <a href="#">정치</a>
+        <a href="#">IT/과학</a>
+    </nav>
+
+    
+    <main>
+        <img src="./image.png" alt="uzip logo" class="top-logo">
+
+        <form>
+            <label>Username</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password">
+        </form>
+
+        <div class="divider"><span>or</span></div>
+
+        <button class="google-btn">
+            <img src="./google-logo.png" width="18">
+            Google로 로그인하기
+        </button>
+
+        <footer>
+            <a href="#">회원가입</a> | 아이디 및 비밀번호 찾기
+        </footer>
+    </main>
+
 </body>
-</html> 
+</html>
